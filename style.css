@@ -3,11 +3,10 @@
   margin: 0;
   padding: 0;
   border: 0;
+  text-decoration: none;
 }
 :root {
-  --clr-primary: #2f00ff;
-  --clr-primary-hover: #2f00ff;
-  --clr-primary-dark: #2f00ff;
+  --basis-kleur: #2f00ff;
 }
 
 *,
@@ -46,7 +45,7 @@ body {
 }
 
 .nav-item a:hover {
-  color: var(--clr-primary-dark);
+  color: var(--basis-kleur);
 }
 
 .nav-item:first-child {
@@ -172,4 +171,29 @@ body {
   color: #2f00ff;
 } 
 
+.mid-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15rem;
+  background-color: rgb(0, 0, 0);
 
+}
+
+.mid-con h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+.mid-con p {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: aliceblue;
+}
+
+.typewrite{
+  color: aliceblue;
+}
