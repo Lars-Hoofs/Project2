@@ -20,7 +20,7 @@ body {
 }
 
 .nav-list {
-  background: white;
+  background: rgb(0, 0, 0);
   padding: 1rem 0;
   display: flex;
   justify-content: flex-end;
@@ -38,7 +38,7 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: aliceblue;
   font-size: 1.5rem;
   font-weight: 800;
   transition: all 200ms ease-in;
@@ -71,7 +71,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: aliceblue;
   font-size: 5rem;
   font-weight: 600;
   text-align: center;
@@ -124,14 +124,14 @@ body {
 }
 
 .con-split .overlay-title {
-  color: white;
+  color: aliceblue;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .con-split .overlay-description {
-  color: white;
+  color: aliceblue;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
@@ -186,7 +186,7 @@ body {
 }
 
 .footer-links a {
-  color: white;
+  color: aliceblue;
   font-size: 18px;
 }
 
