@@ -58,24 +58,68 @@ body {
 }
 
 /* Main */
-
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   height: 72vh;
 }
 
-.pdf-container {
-  max-width: 1200px;
-  height: 100%;
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-.pdf-container iframe {
-  width: 100vh;
-  height: 100%;
+form {
+  width: 500px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--basis-kleur);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d0099;
+}
 /* Footer */
 
 .footer-content {
