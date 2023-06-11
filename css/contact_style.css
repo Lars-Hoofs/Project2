@@ -18,6 +18,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+
 }
 
 
@@ -66,15 +67,46 @@ main {
   height: 72vh;
 }
 
-.pdf-container {
-  max-width: 1200px;
-  height: 100%;
+form {
+  width: 400px;
+  padding: 20px;
+
+  border-radius: 10px;
 }
 
-.pdf-container iframe {
-  width: 100vh;
-  height: 100%;
+form h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #2f00ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1d0099;
+}
+
+
 
 /* Footer */
 
@@ -125,7 +157,7 @@ main {
   margin-bottom: 0;
   font-size: 16px;
 }
-
+    
 .footer-content .copyright {
   text-align: center;
   padding: 20px;
