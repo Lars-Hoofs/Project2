@@ -166,6 +166,9 @@ body {
   color: aliceblue;
 }
 
+
+/* Footer */
+
 .footer-content {
   display: flex;
   flex-direction: column;
