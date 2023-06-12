@@ -1,3 +1,7 @@
+<?php
+require_once "../php/session.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,28 +47,32 @@
         </header>
         <main>
             <div class="form-container">
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <form action="../php/inlog.php" method="POST">
                     <h2>Login</h2>
                     <div>
-                        <label for="login_username">Gebruikersnaam:</label>
+                        <label for="login_username">Gebruikersnaam/email:</label>
                         <input type="text" id="login_username" name="login_username" value="" required>
                     </div>
                     <div>
                         <label for="login_password">Wachtwoord:</label>
                         <input type="password" id="login_password" name="login_password" value="" required>
                     </div>
-                   <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp"></div>
                     <div>
                         <input type="submit" value="Verzenden">
                     </div>
                 </form>
             </div>
             <div class="form-container">
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <form action="../php/register.php" method="POST">
                     <h2>Registreren</h2>
                     <div>
                         <label for="register_username">Gebruikersnaam:</label>
                         <input type="text" id="register_username" name="register_username" value="" required>
+                    </div>
+                    <div>
+                        <label for="register_email">Email:</label>
+                        <input type="email" id="register_email" name="register_email" value="" required>
                     </div>
                     <div>
                         <label for="register_password">Wachtwoord:</label>
@@ -72,7 +80,8 @@
                     </div>
                     <div>
                         <label for="confirm_register_password">Bevestig wachtwoord:</label>
-                        <input type="password" id="confirm_register_password" name="confirm_register_password" value="" required>
+                        <input type="password" id="confirm_register_password" name="confirm_register_password" value=""
+                            required>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp"></div>
                     <div>
@@ -119,5 +128,5 @@
         </footer>
     </div>
 </body>
-</html>
 
+</html>
