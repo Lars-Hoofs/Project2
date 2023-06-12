@@ -9,31 +9,34 @@
 </head>
 <body>
     <div class="container">
-        <header>
-          <nav>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="../html/index.php">
-                  <img src="../img/vogel1.png" alt=""></a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/nieuws_index.php">Nieuws</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/leden_index.php">Leden</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/standpunten_index.php">Standpunten</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/contact_index.php">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/schenk_index.php">Schenk</a>
-              </li>
-            </ul>
-          </nav>
-          </header>
+    <header>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../html/index.php">
+                                <img src="../img/vogel1.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/nieuws_index.php">Nieuws</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/leden_index.php">Leden</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/standpunten_index.php">Standpunten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/contact_index.php">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/schenk_index.php">Schenk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/login.php">Login / register</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
           <main>
             <h1>Doneer nu</h1>
             <form id="donation-form">
