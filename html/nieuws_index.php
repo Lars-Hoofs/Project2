@@ -10,30 +10,29 @@
 <body>
     <div class="container">
         <header>
-            <body>
-                <nav>
-                    <ul class="nav-list">
-                      <li class="nav-item">
-                        <a href="../html/index.html">
-                            <img src="../img/vogel1.png" alt=""></a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/nieuws_index.html">Nieuws</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/leden_index.html">Leden</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/standpunten_index.html">Standpunten</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/contact_index.html">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/schenk_index.html">Schenk</a>
-                      </li>
-                    </ul>
-                  </nav>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="../html/index.php">
+                  <img src="../img/vogel1.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/nieuws_index.php">Nieuws</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/leden_index.php">Leden</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/standpunten_index.php">Standpunten</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/contact_index.php">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/schenk_index.php">Schenk</a>
+              </li>
+            </ul>
+          </nav>
           </header>
           <main>
             <div class="news-container">

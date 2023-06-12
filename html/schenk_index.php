@@ -4,59 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contact_style.css">
+    <link rel="stylesheet" href="../css/schenk_style.css">
     <title>PVV Nieuws</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <body>
-                <nav>
-                    <ul class="nav-list">
-                      <li class="nav-item">
-                        <a href="../html/index.html">
-                            <img src="../img/vogel1.png" alt=""></a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/nieuws_index.html">Nieuws</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/leden_index.html">Leden</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/standpunten_index.html">Standpunten</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/contact_index.html">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="../html/schenk_index.html">Schenk</a>
-                      </li>
-                    </ul>
-                  </nav>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="../html/index.php">
+                  <img src="../img/vogel1.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/nieuws_index.php">Nieuws</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/leden_index.php">Leden</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/standpunten_index.php">Standpunten</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/contact_index.php">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/schenk_index.php">Schenk</a>
+              </li>
+            </ul>
+          </nav>
           </header>
           <main>
-            <form action="submit_form.php" method="POST">
-              <h2>Contact</h2>
-              <div>
+            <h1>Doneer nu</h1>
+            <form id="donation-form">
+              <div class="form-group">
                 <label for="name">Naam:</label>
                 <input type="text" id="name" name="name" required>
               </div>
-              <div>
-                <label for="phone">Telefoon nummer:</label>
-                <input type="tel" id="phone" name="phone" required>
-              </div>
-              <div>
-                <label for="email">Email:</label>
+              <div class="form-group">
+                <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
               </div>
-              <div>
+              <div class="form-group">
+                <label for="amount">Bedrag:</label>
+                <input type="number" id="amount" name="amount" required>
+              </div>
+              <div class="form-group">
                 <label for="message">Bericht:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea>
               </div>
-              <div>
-                <input type="submit" value="Verzenden">
+              <div class="form-group">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Ik ga akkoord met de <a href="overeenkomst.pdf" target="_blank">overeenkomst</a>.</label>
               </div>
+              <div class="form-group">
+                <label for="payment-method">Betaalmethode:</label>
+                <select id="payment-method" name="payment-method" required>
+                  <option value="">Kies een betaalmethode</option>
+                  <option value="credit-card">Creditcard</option>
+                  <option value="bank-transfer">Bankoverschrijving</option>
+                  <option value="paypal">PayPal</option>
+                </select>
+              </div>
+              <input type="submit" value="Doneer">
             </form>
           </main>
           <footer>
