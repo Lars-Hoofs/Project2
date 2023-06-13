@@ -77,7 +77,7 @@
                 <span class="image-container">
                     <img src="../img/20230304_154336.png" alt="">
                     <div class="image-overlay">
-                        <h1 class="overlay-title">meld je aan</h1>
+                        <h1 class="overlay-title"><a href="">meld je aan</a></h1>
                         <p class="overlay-description">Blijf op de hoogte van de laatste nieuwtjes door je in te
                             schrijven voor onze nieuws mail.</p>
                     </div>
