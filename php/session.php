@@ -14,5 +14,11 @@ function redirectIfNotLoggedIn() {
 
 function logout() {
     session_destroy();
+    header("Location: ../html/login.php");
+    exit;
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
+    logout();
 }
 ?>
