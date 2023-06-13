@@ -17,11 +17,14 @@ function logout() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lars pagina</title>
+    <title>Account info</title>
 </head>
 <body>
     <form method="post">
         <button type="submit" name="logout">Uitloggen</button>
+    </form>
+    <form method="post" action="index.php">
+        <br><button type="submit">Go Back</button>
     </form>
 </body>
 </html>

@@ -7,6 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = "";
     $dbname = "project2";
 
+
+
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -46,5 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $conn = null;
+}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
+
+    if (empty($recaptchaResponse)) {
+        echo "<h4>Please complete the reCAPTCHA.</h4>";
+    }
 }
 ?>

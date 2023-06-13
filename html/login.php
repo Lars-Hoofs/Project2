@@ -57,7 +57,7 @@ require_once "../php/session.php";
                         <label for="login_password">Wachtwoord:</label>
                         <input type="password" id="login_password" name="login_password" value="" required>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp" name="g-recaptcha-response"></div>
                     <div>
                         <input type="submit" value="Verzenden">
                     </div>
@@ -83,7 +83,7 @@ require_once "../php/session.php";
                         <input type="password" id="confirm_register_password" name="confirm_register_password" value=""
                             required>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lcugo8mAAAAAMHZjNACHGwbDaSoxnqvET3XVYzp" name="g-recaptcha-response"></div>
                     <div>
                         <input type="submit" value="Verzenden">
                     </div>
