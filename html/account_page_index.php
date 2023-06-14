@@ -9,7 +9,7 @@ require_once "../php/session.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/account_page_style.css">
     <title>Stem pvv</title>
 </head>
 
@@ -26,7 +26,7 @@ require_once "../php/session.php";
                         <a href="../html/nieuws_index.php">Nieuws</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../html/leden_index.php">Leden</a>
+                        <a href="../html/leden_index.php">Leden</a> 
                     </li>
                     <li class="nav-item">
                         <a href="../html/standpunten_index.php">Standpunten</a>
