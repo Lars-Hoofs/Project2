@@ -62,6 +62,7 @@ require_once "../php/session.php";
     <h1>Welkom</h1>
     <p>Je bent momenteel niet ingelogd.</p>
     <?php endif; ?>
+    
 </main>
         <footer>
             <div class="footer-content">
