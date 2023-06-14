@@ -54,3 +54,9 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navList = document.querySelector('.nav-list');
+
+hamburgerMenu.addEventListener('click', function () {
+    navList.classList.toggle('show');
+});

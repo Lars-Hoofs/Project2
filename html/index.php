@@ -18,6 +18,11 @@
     <div class="container">
         <header>
             <nav>
+                <button class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="../html/index.php">
