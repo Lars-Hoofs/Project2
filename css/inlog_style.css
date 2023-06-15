@@ -82,6 +82,7 @@ form {
 form h2 {
   margin-bottom: 20px;
   text-align: center;
+  color: aliceblue;
 }
 
 form div {
@@ -91,6 +92,7 @@ form div {
 form label {
   display: block;
   margin-bottom: 5px;
+  color: aliceblue;
 }
 
 form input,
