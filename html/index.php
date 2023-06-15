@@ -18,11 +18,6 @@
     <div class="container">
         <header>
             <nav>
-                <button class="hamburger-menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="../html/index.php">
@@ -54,6 +49,9 @@
                         <a href="../html/login.php">Login / register</a>
                     </li>
                     <?php endif; ?>
+                    <li class="nav-itemz">
+                        <a href=""><img src="../img/icons/burgir.png    " alt=""></a>
+                    </li>
                 </ul>
             </nav>
         </header>
