@@ -9,13 +9,14 @@ require_once "../php/session.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/burger.js"></script>
     <link rel="stylesheet" href="../css/nieuws_style.css">
     <title>PVV Nieuws</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
+    <header>
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -48,6 +49,9 @@ require_once "../php/session.php";
                         <a href="../html/login.php">Login / register</a>
                     </li>
                     <?php endif; ?>
+                    <li class="nav-itemz">
+                        <img src="../img/icons/burger-menu.png" onclick="burger()" alt="">
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -138,9 +142,35 @@ require_once "../php/session.php";
                         </ul>
                     </div>
                 </div>
+                
                 <p class="copyright">&copy; 2023 Partij voor de vrijheid.nl. Alle rechten voorbehouden.</p>
             </div>
         </footer>
+        <div id="myNav" class="overlay">
+
+            <!-- burger menu slide left werkt -->
+            <a href="javascript:void(0)" class="sluitbtn" onclick="sluitNav()">&times;</a>
+
+
+            <div class="overlay-content">
+                <a href="../html/index.php">Home</a>
+                <a href="../html/nieuws_index.php">Nieuws</a>
+                <a href="../html/leden_index.php">Leden</a>
+                <a href="../html/standpunten_index.php">Standpunten</a>
+                <a href="../html/contact_index.php">Contact</a>
+                <a href="../html/schenk_index.php">Schenk</a>
+                <?php if (isUserLoggedIn()): ?>
+
+                <a href="../html/account_page_index.php">
+                    <?php echo $_SESSION['gebruikersnaam']; ?>
+                </a>
+                <?php else: ?>
+                <a href="../html/login.php">Login / register</a>
+
+                <?php endif; ?>
+
+            </div>
+        </div>
     </div>
 </body>
 

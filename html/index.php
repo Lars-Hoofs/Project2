@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/functions.js"></script>
+    <script src="../js/burger.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Stem pvv</title>
 </head>
@@ -50,7 +51,7 @@
                     </li>
                     <?php endif; ?>
                     <li class="nav-itemz">
-                        <a href=""><img src="../img/icons/burgir.png    " alt=""></a>
+                        <img src="../img/icons/burger-menu.png" onclick="burger()" alt="">
                     </li>
                 </ul>
             </nav>
@@ -87,27 +88,29 @@
                 </span>
             </div>
             <div class="cont-nieuws">
-            <div class="news-container">
-                <div class="news-item">
-                    <h2>campagnetour 2023</h2>
-                    <p>11/06/2023</p>
-                    <img src="../img/nieuws-images/campagnetour.jpg" alt="Afbeelding 1" class="news-image">
-                    <p>Geert Wilders maakt indruk met krachtige campagnetour door het land</p>
+                <div class="news-container">
+                    <div class="news-item">
+                        <h2>campagnetour 2023</h2>
+                        <p>11/06/2023</p>
+                        <img src="../img/nieuws-images/campagnetour.jpg" alt="Afbeelding 1" class="news-image">
+                        <p>Geert Wilders maakt indruk met krachtige campagnetour door het land</p>
+                    </div>
+                    <div class="news-item">
+                        <h2>Peilingen laten kansen zien van de pvv</h2>
+                        <p>09/06/2023</p>
+                        <img src="../img/nieuws-images/de-derde-keer-peilingen.png" alt="Afbeelding 2"
+                            class="news-image">
+                        <p>De peilingen laten zien hoe de pvv mee groeit.</p>
+                    </div>
+                    <div class="news-item">
+                        <h2>Geert Wilders lanceert nieuw veiligheidsplan voor Nederland</h2>
+                        <p>08/06/2023</p>
+                        <img src="../img/nieuws-images/1024x576a.jpg" alt="Afbeelding 3" class="news-image">
+                        <p>Geert Wilders onthult ambitieus veiligheidsplan om criminaliteit en terrorisme effectief aan
+                            te
+                            pakken.</p>
+                    </div>
                 </div>
-                <div class="news-item">
-                    <h2>Peilingen laten kansen zien van de pvv</h2>
-                    <p>09/06/2023</p>
-                    <img src="../img/nieuws-images/de-derde-keer-peilingen.png" alt="Afbeelding 2" class="news-image">
-                    <p>De peilingen laten zien hoe de pvv mee groeit.</p>
-                </div>
-                <div class="news-item">
-                    <h2>Geert Wilders lanceert nieuw veiligheidsplan voor Nederland</h2>
-                    <p>08/06/2023</p>
-                    <img src="../img/nieuws-images/1024x576a.jpg" alt="Afbeelding 3" class="news-image">
-                    <p>Geert Wilders onthult ambitieus veiligheidsplan om criminaliteit en terrorisme effectief aan te
-                        pakken.</p>
-                </div>
-            </div>
         </main>
         <footer>
             <div class="footer-content">
@@ -144,6 +147,31 @@
                 <p class="copyright">&copy; 2023 Partij voor de vrijheid.nl. Alle rechten voorbehouden.</p>
             </div>
         </footer>
+        <div id="myNav" class="overlay">
+
+            <!-- burger menu slide left werkt -->
+            <a href="javascript:void(0)" class="sluitbtn" onclick="sluitNav()">&times;</a>
+
+
+            <div class="overlay-content">
+                <a href="../html/index.php">Home</a>
+                <a href="../html/nieuws_index.php">Nieuws</a>
+                <a href="../html/leden_index.php">Leden</a>
+                <a href="../html/standpunten_index.php">Standpunten</a>
+                <a href="../html/contact_index.php">Contact</a>
+                <a href="../html/schenk_index.php">Schenk</a>
+                <?php if (isUserLoggedIn()): ?>
+
+                <a href="../html/account_page_index.php">
+                    <?php echo $_SESSION['gebruikersnaam']; ?>
+                </a>
+                <?php else: ?>
+                <a href="../html/login.php">Login / register</a>
+
+                <?php endif; ?>
+
+            </div>
+        </div>
     </div>
 </body>
 
