@@ -353,3 +353,10 @@ body {
 
 }
 
+@media screen and (max-width: 800px) {
+  .news-item {
+    flex: 0 0 100%;
+  }
+}
+
+

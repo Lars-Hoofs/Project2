@@ -18,6 +18,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #1c1b1d;  
 }
 
 
@@ -74,13 +75,14 @@ main {
     flex-wrap: wrap;
     max-width: 1200px;
     margin-top: 20px;
+    background-color: #1c1b1d;  
   }
   
   .news-item {
     flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #000000;
     border-radius: 10px;
     overflow: hidden;
     align-self: flex-start;
@@ -91,11 +93,13 @@ main {
   .news-item h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: aliceblue;
   }
   
   .news-item p {
     font-size: 16px;
     margin-bottom: 5px;
+    color: aliceblue;
   }
   
   .news-image {
@@ -244,6 +248,12 @@ main {
   }
 
 }
+@media screen and (max-width: 800px) {
+  .news-item {
+    flex: 0 0 100%;
+  }
+}
+
 
 
 
