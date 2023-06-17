@@ -64,7 +64,6 @@ require_once "../php/session.php";
     </form>
     <?php else: ?>
     <h1>Welkom</h1>
-    <p>Je bent momenteel niet ingelogd.</p>
     <?php endif; ?>
     
 </main>
