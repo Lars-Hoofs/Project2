@@ -309,6 +309,7 @@ body {
     transition: 0.5s; 
     display: none;
   }
+  
 }
 @media screen and (max-width: 800px){
   .nav-item a {

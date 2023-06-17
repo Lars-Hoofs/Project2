@@ -300,6 +300,9 @@ body {
   .nav-itemz img {
     display: none;
   }
+  .overlay{
+    display: none;
+  }
 }
 @media screen and (max-width: 800px){
   .nav-item a {
