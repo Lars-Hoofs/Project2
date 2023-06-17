@@ -42,9 +42,10 @@ body {
 
 .nav-itemz img {
   width: 40px;
+}
+.nav-itemz {
   margin-right: 20PX;
 }
-
 .nav-item a {
   text-decoration: none;
   color: aliceblue;
