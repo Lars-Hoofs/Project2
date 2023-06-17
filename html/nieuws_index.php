@@ -56,60 +56,58 @@ require_once "../php/session.php";
             </nav>
         </header>
         <main>
-            <div class="news-container">
-                <div class="news-item">
-                    <h2>campagnetour 2023</h2>
-                    <p>11/06/2023</p>
-                    <img src="../img/nieuws-images/campagnetour.jpg" alt="Afbeelding 1" class="news-image">
-                    <p>Geert Wilders maakt indruk met krachtige campagnetour door het land</p>
-                </div>
-                <div class="news-item">
-                    <h2>Peilingen laten kansen zien van de pvv</h2>
-                    <p>09/06/2023</p>
-                    <img src="../img/nieuws-images/de-derde-keer-peilingen.png" alt="Afbeelding 2" class="news-image">
-                    <p>De peilingen laten zien hoe de pvv mee groeit.</p>
-                </div>
-                <div class="news-item">
-                    <h2>Geert Wilders lanceert nieuw veiligheidsplan voor Nederland</h2>
-                    <p>08/06/2023</p>
-                    <img src="../img/nieuws-images/1024x576a.jpg" alt="Afbeelding 3" class="news-image">
-                    <p>Geert Wilders onthult ambitieus veiligheidsplan om criminaliteit en terrorisme effectief aan te
-                        pakken.</p>
-                </div>
-                <div class="news-item">
-                    <h2>De Politieke Opkomst van Geert Wilders</h2>
-                    <p>06/06/2023</p>
-                    <img src="../img/nieuws-images/FxycqNfXoAELWZu.jpg" alt="Afbeelding 3" class="news-image">
-                    <p>Een overzicht van Wilders' impact op de Nederlandse politiek.</p>
-                </div>
-                <div class="news-item">
-                    <h2>Geert Wilders en de Toekomst van het Nederlandse Immigratiebeleid</h2>
-                    <p>04/06/2023</p>
-                    <img src="../img/nieuws-images/geert-wilders-blaast-cartoonwedstrijd-af-er-staat-een-prijs-op-mijn-hoofd.jpg"
-                        alt="Afbeelding 3" class="news-image">
-                    <p>Wilders' standpunten over immigratie en integratie.</p>
-                </div>
-                <div class="news-item">
-                    <h2>Het Populisme van Geert Wilders: Een Diepgaande Analyse van Zijn Strategieën</h2>
-                    <p>03/06/2023</p>
-                    <img src="../img/nieuws-images/download.jpg" alt="Afbeelding 3" class="news-image">
-                    <p>Onderzoek naar de populistische tactieken van Wilders.</p>
-                </div>
-                <div class="news-item">
-                    <h2>Geert Wilders en de Vrijheid van Meningsuiting: Een Delicate Balans</h2>
-                    <p>02/06/2023</p>
-                    <img src="../img/nieuws-images/freedom-001.jpg" alt="Afbeelding 3" class="news-image">
-                    <p>Een bespreking van Wilders' visie op vrijheid van meningsuiting.</p>
-                </div>
-                <div class="news-item">
-                    <h2>Geert Wilders en de Opkomst van Rechtspopulisme in Europa</h2>
-                    <p>030/05/2023</p>
-                    <img src="../img/nieuws-images/Geert-Wilders-.jpg" alt="Afbeelding 3" class="news-image">
-                    <p>Een vergelijking van Wilders met andere rechtspopulistische leiders in Europa.</p>
-                </div>
-
-            </div>
-        </main>
+  <div class="news-container">
+    <a href="../Nieuws-artikelen-html/artk-camp.php" class="news-item">
+      <h2>campagnetour 2023</h2>
+      <p>11/06/2023</p>
+      <img src="../img/nieuws-images/campagnetour.jpg" alt="Afbeelding 1" class="news-image">
+      <p>Geert Wilders maakt indruk met krachtige campagnetour door het land</p>
+    </a>
+    <a href="../Nieuws-artikelen-html/artk-pl.php" class="news-item">
+      <h2>Peilingen laten kansen zien van de pvv</h2>
+      <p>09/06/2023</p>
+      <img src="../img/nieuws-images/de-derde-keer-peilingen.png" alt="Afbeelding 2" class="news-image">
+      <p>De peilingen laten zien hoe de pvv meegroeit.</p>
+    </a>
+    <a href="#" class="news-item">
+      <h2>Geert Wilders lanceert nieuw veiligheidsplan voor Nederland</h2>
+      <p>08/06/2023</p>
+      <img src="../img/nieuws-images/1024x576a.jpg" alt="Afbeelding 3" class="news-image">
+      <p>Geert Wilders onthult ambitieus veiligheidsplan om criminaliteit en terrorisme effectief aan te pakken.</p>
+    </a>
+    <a href="#" class="news-item">
+      <h2>De Politieke Opkomst van Geert Wilders</h2>
+      <p>06/06/2023</p>
+      <img src="../img/nieuws-images/FxycqNfXoAELWZu.jpg" alt="Afbeelding 3" class="news-image">
+      <p>Een overzicht van Wilders' impact op de Nederlandse politiek.</p>
+    </a>
+    <a href="#" class="news-item">
+      <h2>Geert Wilders en de Toekomst van het Nederlandse Immigratiebeleid</h2>
+      <p>04/06/2023</p>
+      <img src="../img/nieuws-images/geert-wilders-blaast-cartoonwedstrijd-af-er-staat-een-prijs-op-mijn-hoofd.jpg"
+        alt="Afbeelding 3" class="news-image">
+      <p>Wilders' standpunten over immigratie en integratie.</p>
+    </a>
+    <a href="#" class="news-item">
+      <h2>Het Populisme van Geert Wilders: Een Diepgaande Analyse van Zijn Strategieën</h2>
+      <p>03/06/2023</p>
+      <img src="../img/nieuws-images/download.jpg" alt="Afbeelding 3" class="news-image">
+      <p>Onderzoek naar de populistische tactieken van Wilders.</p>
+    </a>
+    <a href="#" class="news-item">
+      <h2>Geert Wilders en de Vrijheid van Meningsuiting: Een Delicate Balans</h2>
+      <p>02/06/2023</p>
+      <img src="../img/nieuws-images/freedom-001.jpg" alt="Afbeelding 3" class="news-image">
+      <p>Een bespreking van Wilders' visie op vrijheid van meningsuiting.</p>
+    </a>
+    <a href="#" class="news-item">
+      <h2>Geert Wilders en de Opkomst van Rechtspopulisme in Europa</h2>
+      <p>030/05/2023</p>
+      <img src="../img/nieuws-images/Geert-Wilders-.jpg" alt="Afbeelding 3" class="news-image">
+      <p>Een vergelijking van Wilders met andere rechtspopulistische leiders in Europa.</p>
+    </a>
+  </div>
+</main>
         <footer>
             <div class="footer-content">
             <ul class="footer-links">
