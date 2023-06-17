@@ -70,12 +70,12 @@ require_once "../php/session.php";
 </main>
         <footer>
             <div class="footer-content">
-                <ul class="footer-links">
-                    <li><a href="#">Nieuws</a></li>
-                    <li><a href="#">Leden</a></li>
-                    <li><a href="#">Standpunten</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Schenk</a></li>
+            <ul class="footer-links">
+                    <li><a href="../html/nieuws_index.php">Nieuws</a></li>
+                    <li><a href="../html/leden_index.php">Leden</a></li>
+                    <li><a href="../html/standpunten_index.php">Standpunten</a></li>
+                    <li><a href="../html/contact_index.php">Contact</a></li>
+                    <li><a href="../html/schenk_index.php">Schenk</a></li>
                 </ul>
                 <div class="additional-sections">
                     <div class="section">
