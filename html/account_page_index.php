@@ -58,7 +58,7 @@ require_once "../php/session.php";
         <main>
             <?php if (isUserLoggedIn()): ?>
             <h1>Welkom, <?php echo $_SESSION['gebruikersnaam']; ?></h1>
-            <form action="../php/update_user.php" method="post">
+            <form action="../php/update.php" method="post">
                 <input type="hidden" name="gebruikersnaam" value="<?php echo $_SESSION['gebruikersnaam']; ?>">
                 <label for="nieuweGebruikersnaam">Nieuwe gebruikersnaam:</label>
                 <input type="text" name="nieuweGebruikersnaam" id="nieuweGebruikersnaam">
