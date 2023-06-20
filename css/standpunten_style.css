@@ -173,6 +173,9 @@ main {
   .overlay{
     display: none;
   }
+  .pdf_viewer{
+    display: none;
+  }
 }
 @media screen and (max-width: 800px) and (min-width: 400px) {
   .nav-item a {
