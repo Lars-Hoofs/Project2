@@ -59,6 +59,9 @@ require_once "../php/session.php";
         <div class="pdf-container">
             <iframe src="../data/VerkiezingsProgramma2021-Final.pdf"></iframe>
         </div>
+        <div class="pdf_viewer">
+            <a class="pdf_viewer" href="../data/VerkiezingsProgramma2021-Final.pdf">View PDF</a>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
