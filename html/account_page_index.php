@@ -56,17 +56,25 @@ require_once "../php/session.php";
             </nav>
         </header>
         <main>
-    <?php if (isUserLoggedIn()): ?>
-    <h1>Welkom, <?php echo $_SESSION['gebruikersnaam']; ?></h1>
-    <form action="../php/session.php" method="post">
-        <input type="hidden" name="logout" value="true">
-        <input type="submit" value="Uitloggen">
-    </form>
-    <?php else: ?>
-    <h1>Welkom</h1>
-    <?php endif; ?>
-    
-</main>
+            <?php if (isUserLoggedIn()): ?>
+            <h1>Welkom, <?php echo $_SESSION['gebruikersnaam']; ?></h1>
+            <form action="../php/update_user.php" method="post">
+                <input type="hidden" name="gebruikersnaam" value="<?php echo $_SESSION['gebruikersnaam']; ?>">
+                <label for="nieuweGebruikersnaam">Nieuwe gebruikersnaam:</label>
+                <input type="text" name="nieuweGebruikersnaam" id="nieuweGebruikersnaam">
+                <br>
+                <label for="email">Nieuw emailadres:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="wachtwoord">Nieuw wachtwoord:</label>
+                <input type="password" name="wachtwoord" id="wachtwoord">
+                <br>
+                <input type="submit" value="Opslaan" name="submit">
+            </form>
+            <?php else: ?>
+            <h1>Welkom</h1>
+            <?php endif; ?>
+        </main>
         <footer>
             <div class="footer-content">
             <ul class="footer-links">
