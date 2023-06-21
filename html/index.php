@@ -64,17 +64,17 @@
             <div class="mid-con">
             <h1 onclick="playAudio()">Partij voor de vrijheid</h1>
 
-<audio id="myAudio">
-  <source src="../data/geertm.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+    <audio id="myAudio">
+      <source src="../data/geertm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
 
-<script>
-function playAudio() {
-  var audio = document.getElementById("myAudio");
-  audio.play();
-}
-</script>
+    <script>
+    function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+    }
+    </script>
                 <p>
                     <a href="" class="typewrite" data-period="2000"
                         data-type='[ "De partij voor en door nederland.", "De partij tegen oosterse imigratie", "De partij voor de nederlandse trots.", "De partij van nederland" ]'>
