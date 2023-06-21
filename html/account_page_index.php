@@ -71,6 +71,11 @@ require_once "../php/session.php";
                 <br>
                 <input type="submit" value="Opslaan" name="submit">
             </form>
+
+            <form action="../php/session.php" method="post">
+        <input type="hidden" name="logout" value="true">
+        <input type="submit" value="Uitloggen">
+    </form>
             <?php else: ?>
             <h1>Welkom</h1>
             <?php endif; ?>
