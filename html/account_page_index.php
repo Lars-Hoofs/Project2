@@ -16,7 +16,7 @@ require_once "../php/session.php";
 
 <body>
     <div class="container">
-    <header>
+        <header>
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -77,7 +77,7 @@ require_once "../php/session.php";
         </main>
         <footer>
             <div class="footer-content">
-            <ul class="footer-links">
+                <ul class="footer-links">
                     <li><a href="../html/nieuws_index.php">Nieuws</a></li>
                     <li><a href="../html/leden_index.php">Leden</a></li>
                     <li><a href="../html/standpunten_index.php">Standpunten</a></li>
@@ -107,7 +107,7 @@ require_once "../php/session.php";
                         </ul>
                     </div>
                 </div>
-                
+
                 <p class="copyright">&copy; 2023 Partij voor de vrijheid.nl. Alle rechten voorbehouden.</p>
             </div>
         </footer>
@@ -136,6 +136,11 @@ require_once "../php/session.php";
 
             </div>
         </div>
+    </div>
+    <div class="muis">
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+        <script src="../js/muis.js"></script>
     </div>
 </body>
 

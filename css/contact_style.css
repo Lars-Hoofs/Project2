@@ -260,3 +260,31 @@ form input[type="submit"]:hover {
 }
 
 
+/* Muisje */
+
+body {
+  cursor: none;
+}
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+.cursor-outline {
+  border:2px solid white;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  text-align:center;
+  line-height:100px;
+
+}
+.cursor-dot, .cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}

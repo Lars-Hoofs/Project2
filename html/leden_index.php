@@ -207,6 +207,11 @@ require_once "../php/session.php";
 </div>
 </div>
     </div>
+    <div class="muis">
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+        <script src="../js/muis.js"></script>
+    </div>
 </body>
 
 </html>
