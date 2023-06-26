@@ -26,5 +26,6 @@ try {
 ?>
 
 <form action="../html/account_page_index.php" method="post">
+<input type="hidden" name="logout" value="true">
     <input type="submit" value="Go Back">
 </form>

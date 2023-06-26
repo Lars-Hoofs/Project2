@@ -89,8 +89,9 @@ require_once "../php/session.php";
             <?php else: ?>
             <h1>Welkom</h1>
             <?php endif; ?>
-            <form method="post" action="../php/delete.php">
-    <input type="submit" value="Verwijder Account" name="delete" onclick="return confirm('Weet je zeker dat je je account wilt verwijderen?')">
+            <form method="post" action="../php/delete.php">`
+            <input type="hidden" name="gebruikersnaam" value="<?php echo $_SESSION['gebruikersnaam']; ?>">
+    <input type="submit" value="Verwijder Account" name="delete" onclick="return confirm('Weet je zeker dat je je account wilt verwijderen?')" >
 </form>
         </main>
         <footer>
