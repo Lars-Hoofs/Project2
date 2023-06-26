@@ -14,11 +14,11 @@ try {
         $password = $_POST["wachtwoord"];
         $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
 
-        $updateQuery = $connection->prepare("UPDATE gebruikers SET gebruikersnaam = :nieuwegebruikersnaam, email = :email WHERE gebruikersnaam = :oldname");
+        $updateQuery = $connection->prepare("UPDATE gebruikers SET gebruikersnaam = :nieuwegebruikersnaam, email = :email, password = :password WHERE gebruikersnaam = :oldname");
         $updateQuery->bindParam(':nieuwegebruikersnaam', $nieuweGebruikersnaam);
         $updateQuery->bindParam(':email', $email);
-        $updateQuery->bindParam(':oldname', $gebruikersnaam);
         $updateQuery->bindParam(':password',  $hashedpassword);
+        $updateQuery->bindParam(':oldname', $gebruikersnaam);
         $updateQuery->execute();
         echo "<br>";
         echo "<h1>Done</h1>";
