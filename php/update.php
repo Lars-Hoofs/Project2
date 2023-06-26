@@ -14,7 +14,7 @@ try {
         $password = $_POST["wachtwoord"];
         $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
 
-        $updateQuery = $connection->prepare("UPDATE gebruikers SET gebruikersnaam = :nieuwegebruikersnaam, email = :email, password = :password WHERE gebruikersnaam = :oldname");
+        $updateQuery = $connection->prepare("UPDATE gebruikers SET gebruikersnaam = :nieuwegebruikersnaam, email = :email, wachtwoord = :password WHERE gebruikersnaam = :oldname");
         $updateQuery->bindParam(':nieuwegebruikersnaam', $nieuweGebruikersnaam);
         $updateQuery->bindParam(':email', $email);
         $updateQuery->bindParam(':password',  $hashedpassword);
@@ -29,5 +29,6 @@ try {
 ?>
 
 <form action="../html/account_page_index.php" method="post">
+    <input type="hidden" name="logout" value="true">
     <input type="submit" value="Go Back">
 </form>
