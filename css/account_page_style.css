@@ -106,7 +106,25 @@ h1 {
 label {
   color: aliceblue;
 }
+main {
+  padding: 100px;
+}
+hr {
+  border-top: 1px solid gray;
+}
+.ext-list {
+  display: flex;
+  gap: 30px; /* Aangepaste waarde voor de afstand */
+}
 
+.ext-list h2 {
+  margin: 0;
+  color: aliceblue;
+  font-weight: 300;
+}
+#high {
+  color: #2f00ff;
+}
 /* Footer */
 
 .footer-content {
