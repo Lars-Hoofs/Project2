@@ -79,19 +79,19 @@ require_once "../php/session.php";
                 <label for="wachtwoord">Nieuw wachtwoord:</label>
                 <input type="password" name="wachtwoord" id="wachtwoord">
                 <br>
-                <input type="submit" value="Opslaan" name="submit">
+                <input type="submit" value="Opslaan" class="bt1" name="submit">
             </form>
 
             <form action="../php/session.php" method="post">
         <input type="hidden" name="logout" value="true">
-        <input type="submit" value="Uitloggen">
+        <input type="submit" value="Uitloggen" class="bt1">
     </form>
             <?php else: ?>
             <h1>Welkom</h1>
             <?php endif; ?>
             <form method="post" action="../php/delete.php">
             <input type="hidden" name="gebruikersnaam" value="<?php echo $_SESSION['gebruikersnaam']; ?>">
-    <input type="submit" value="Verwijder Account" name="delete" onclick="return confirm('Weet je zeker dat je je account wilt verwijderen?')" >
+    <input type="submit" value="Verwijder Account" class="bt1" name="delete" onclick="return confirm('Weet je zeker dat je je account wilt verwijderen?')" >
 </form>
         </main>
         <footer>

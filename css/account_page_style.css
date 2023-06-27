@@ -309,3 +309,14 @@ body {
   z-index: 1;
   pointer-events: none;
 }
+
+.bt1 {
+  margin-top: 10px;
+  padding: 10px;
+  color: aliceblue;
+  background-color: #2f00ff;
+  border-radius: 4px;
+}
+.bt1:hover{
+  text-decoration: underline;
+}
