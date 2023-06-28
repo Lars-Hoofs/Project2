@@ -114,7 +114,7 @@ hr {
 }
 .ext-list {
   display: flex;
-  gap: 30px; /* Aangepaste waarde voor de afstand */
+  gap: 30px; 
 }
 
 .ext-list h2 {
@@ -125,6 +125,7 @@ hr {
 #high {
   color: #2f00ff;
 }
+
 /* Footer */
 
 .footer-content {
